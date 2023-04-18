@@ -1,22 +1,21 @@
 .mr1 {
     margin-left: 85%;
+    margin-top: 0;
   }
   .mr2 {
     margin-left: 5px;
   }
   .mr3 {
     margin-left: 5px;
+    position: absolute;
   }
   
-  .bgc {
-    background-color: "red";
-  }
   .button-col {
     background-color: white;
   }
   .nav-class {
     background-color: #e3f2fd;
-    padding: 1.5%;
+    padding: 1%;
   }
   
   .link-style {
@@ -26,9 +25,15 @@
     font-size: 15px;
     text-decoration: none;
     font-family: "Georgia", "Courier New", Serif;
+    padding: 0;
   }
   
   .link-style:hover {
     color: rgb(144, 140, 140);
+  }
+
+  .img-size{
+    width: 50px;
+    height: 50px;
   }
   

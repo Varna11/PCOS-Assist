@@ -1,0 +1,12 @@
+.intro-div {
+  margin-left: 2%;
+  margin-right: 5%;
+}
+.articles {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin-left: 4%;
+  margin-top: 3rem;
+}

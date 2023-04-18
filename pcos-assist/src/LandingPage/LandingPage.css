@@ -1,0 +1,8 @@
+.align-rows{
+    display:grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-left: 6%;
+    margin-top: 3rem;
+}

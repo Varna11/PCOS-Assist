@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import Card from "./Card";
+import Card from "../Card/Card";
 import forum from "./forum.jpg";
 import dia from "./diagnosis.jpg";
-import prevent from "./prevention.jpg"
+import prevent from "./prevention.jpg";
+import "./LandingPage.css";
 
 const LandingPage=()=>{  const navigate = useNavigate();
     const clickHandler = (title) => {
@@ -17,8 +18,8 @@ const LandingPage=()=>{  const navigate = useNavigate();
     ];
   
     return (
-      <div>
-        <div className="align">
+      <div >
+        <div className="align-rows">
           <Card
             onClick={clickHandler}
             txt={texts[0]}
