@@ -1,5 +1,5 @@
-import "./Card.css";
-const Card = (props) => {
+import "./AwareCard.css";
+const AwareCard = (props) => {
   const onClickHandler = (event) => {
     event.preventDefault();
     props.onClick(props.code);
@@ -7,10 +7,8 @@ const Card = (props) => {
   return (
     <div className="card card-style">
       <center>
-        <img src={props.src} className="card-img-top img-style" alt="..." />
         <div className="card-body">
           <h3 className="card-title">{props.title}</h3>
-          <p className="card-text">{props.txt}</p>
         </div>
         <button onClick={onClickHandler} className="button-style" type="Submit">
           View
@@ -19,4 +17,4 @@ const Card = (props) => {
     </div>
   );
 };
-export default Card;
+export default AwareCard;

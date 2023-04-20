@@ -1,7 +1,12 @@
 import "./Awareness.css";
-import Card from "../Card/Card";
+import { useNavigate } from "react-router-dom";
+import AwareCard from "./AwareCard";
 
 const Awareness = () => {
+  const navigate = useNavigate();
+  const clickHandler = (title) => {
+    window.open(title);
+  };
   return (
     <>
       <div className="intro-div">
@@ -28,20 +33,44 @@ const Awareness = () => {
       <div className="intro-div">
         <h3> Related Articles</h3>
         <div className="articles">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <AwareCard
+            onClick={clickHandler}
+            code="https://www.statpearls.com/ArticleLibrary/viewarticle/27400"
+            key="Forum"
+            title="StatPearls article on PCOD"
+          />
+          <AwareCard
+            onClick={clickHandler}
+            code="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247486"
+            key="Forum"
+            title="PLOS One journal on PCOD"
+          />
         </div>
       </div>
 
       <div className="intro-div">
         <h3> Video Tutorials</h3>
         <div className="articles">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <div className="video-card">
+            <iframe
+              title="What is Menstruation?"
+              src="https://www.youtube.com/embed/3PaswCBD9j0"
+            ></iframe>
+          </div>
+          <div className="video-card">
+            <iframe src="https://www.youtube.com/embed/etYDoNb4QWA"></iframe>
+          </div>
+          <div className="video-card">
+            <iframe
+              title="Early signs of PCOS in Hindi"
+              src="https://www.youtube.com/embed/CXenzA7XU6E"
+            ></iframe>
+          </div>
+          <div className="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/afVl9Zgnk8M"
+            ></iframe>
+          </div>
         </div>
       </div>
     </>
